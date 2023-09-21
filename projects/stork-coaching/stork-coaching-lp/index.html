@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Coaching Landing Page</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Stork Coaching</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <video src="media/landing-page-video.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Seize Your Potential</h2>
+        <p>Do you know what's best for you? If not, allow me to help.</p>
+        <a href="#">Guide Me</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="https://www.instagram.com/jeremyjjstork/" target="_blank"
+            ><img src="media/instagram.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.tiktok.com/@jeremyjjstork" target="_blank"
+            ><img src="media/tiktok.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/jeremy-stork-81791a186/"
+            target="_blank"
+            ><img src="media/linkedin.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Testimonies</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
